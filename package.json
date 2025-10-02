@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:e2e": "cucumber-js"
+    "test:e2e": "cucumber-js --require-module ts-node/register --require 'steps/**/*.ts' --require 'features/support/**/*.ts'"
   },
   "repository": {
     "type": "git",
