@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:e2e": "rm -rf allure-results && cucumber-js --require-module ts-node/register --require 'steps/**/*.ts' --require 'features/support/**/*.ts' --format @cucumber/pretty-formatter --format allure-cucumberjs/reporter",
+    "test:e2e": "rm -rf allure-results && npx cucumber-js --require-module ts-node/register --require 'steps/**/*.ts' --require 'features/support/**/*.ts' --format @cucumber/pretty-formatter --format allure-cucumberjs/reporter 'features/**/*.feature'",
     "report:allure": "allure generate allure-results --clean -o allure-report",
     "report:open": "npm run report:allure && allure open allure-report"
   },
