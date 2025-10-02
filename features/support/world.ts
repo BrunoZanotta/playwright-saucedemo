@@ -1,5 +1,6 @@
 import { IWorldOptions, World, setWorldConstructor } from '@cucumber/cucumber';
 import { Browser, BrowserContext, Page } from 'playwright';
+import "allure-cucumberjs";
 
 export interface ICustomWorld extends World {
   browser?: Browser;

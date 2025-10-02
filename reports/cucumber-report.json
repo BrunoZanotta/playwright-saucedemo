@@ -1,0 +1,224 @@
+[
+  {
+    "description": "  Como um usuário válido,\n  Eu quero poder fazer login no sistema\n  Para acessar a lista de produtos.",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-na-sauce-demo;login-com-sucesso",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Login com sucesso",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1062572874
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 173875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que eu estou na página de login",
+            "match": {
+              "location": "steps/loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 781781082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "eu preencho o usuário com \"standard_user\" e a senha com \"secret_sauce\"",
+            "match": {
+              "location": "steps/loginSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 235078790
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "eu devo ser redirecionado para a página de produtos",
+            "match": {
+              "location": "steps/loginSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8878875
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 46485458
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-na-sauce-demo",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login na Sauce Demo",
+    "tags": [],
+    "uri": "features/e2e/login.feature"
+  },
+  {
+    "description": "  Como um usuário logado,\n  Eu quero poder adicionar um produto ao carrinho e finalizar a compra\n  Para garantir que o fluxo de ponta a ponta está funcionando.",
+    "elements": [
+      {
+        "description": "",
+        "id": "compra-de-produto-na-sauce-demo;finalizar-a-compra-de-um-produto-com-sucesso",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Finalizar a compra de um produto com sucesso",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 359491833
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 77959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que eu estou logado no sistema com o usuário \"standard_user\" e senha \"secret_sauce\"",
+            "match": {
+              "location": "steps/purchaseSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1023523500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "eu adiciono o primeiro produto da lista ao carrinho",
+            "match": {
+              "location": "steps/purchaseSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14078792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "eu navego para o carrinho de compras",
+            "match": {
+              "location": "steps/purchaseSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101089291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "eu prossigo para o checkout",
+            "match": {
+              "location": "steps/purchaseSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131464834
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "eu preencho as informações de checkout com nome \"Bruno\", sobrenome \"Zanotta\" e CEP \"90000-000\"",
+            "match": {
+              "location": "steps/purchaseSteps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 173229166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "eu finalizo a compra",
+            "match": {
+              "location": "steps/purchaseSteps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92857208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "eu devo ver a mensagem de confirmação \"Thank you for your order!\"",
+            "match": {
+              "location": "steps/purchaseSteps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4017667
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 43769041
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "compra-de-produto-na-sauce-demo",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Compra de produto na Sauce Demo",
+    "tags": [],
+    "uri": "features/e2e/purchase.feature"
+  }
+]
