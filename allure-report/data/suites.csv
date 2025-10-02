@@ -1,7 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"Como um usuário válido,
-  Eu quero poder fazer login no sistema
-  Para acessar a lista de produtos.","2623","Login com sucesso","","Thu Oct 02 13:21:48 GMT-03:00 2025","passed","Thu Oct 02 13:21:51 GMT-03:00 2025","","","",""
-"Como um usuário logado,
-  Eu quero poder adicionar um produto ao carrinho e finalizar a compra
-  Para garantir que o fluxo de ponta a ponta está funcionando.","1841","Finalizar a compra de um produto com sucesso","","Thu Oct 02 13:21:51 GMT-03:00 2025","passed","Thu Oct 02 13:21:52 GMT-03:00 2025","","","",""
