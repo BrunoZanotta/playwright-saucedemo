@@ -6,8 +6,13 @@ on:
   pull_request:
     branches: [ main, master ]
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
-  test:
+  test-and-report:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -27,4 +32,18 @@ jobs:
 
     - name: Run E2E tests with Cucumber
       run: npm run test:e2e
+      if: always()
 
+    - name: Generate Allure Report
+      uses: simple-elf/allure-report-action@v1
+      with:
+        allure_results: allure-results
+        allure_report: allure-report
+      if: always()
+
+    - name: Deploy report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./allure-report
+      if: always()
