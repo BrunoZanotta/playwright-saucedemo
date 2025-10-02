@@ -1,0 +1,12 @@
+{
+    "cucumber.glue": [
+        "steps/**/*.ts",
+        "features/support/**/*.ts"
+    ],
+    "cucumber.features": [
+        "features/**/*.feature"
+    ],
+    "cucumber.extraParameters": [
+        "--require-module ts-node/register"
+    ]
+}
