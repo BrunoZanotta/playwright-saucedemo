@@ -1,1 +1,10 @@
-[ ]
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://BrunoZanotta.github.io/playwright-saucedemo",
+  "buildOrder" : 8,
+  "buildName" : "GitHub Actions Run #18210697635",
+  "buildUrl" : "https://github.com/BrunoZanotta/playwright-saucedemo/actions/runs/18210697635",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://BrunoZanotta.github.io/playwright-saucedemo/8"
+} ]
