@@ -16,7 +16,7 @@ allure-results
 
 /playwright/.auth/
 
-*.js
+
 *.js.map
 *.d.ts
 

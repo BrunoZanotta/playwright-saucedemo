@@ -118,4 +118,4 @@ A pipeline é acionada automaticamente a cada `push` na branch `main`. Ela execu
 Ao final da execução, um relatório unificado do Allure é gerado e publicado. Você pode acessá-lo através do link disponível na aba **Actions** do repositório ou diretamente na página do GitHub Pages do projeto:
 
 [**https://github.com/BrunoZanotta/playwright-saucedemo**](https://github.com/BrunoZanotta/playwright-saucedemo)
-````                  
+                 
